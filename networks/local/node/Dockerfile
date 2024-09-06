@@ -13,7 +13,7 @@ COPY . .
 RUN make build-linux
 
 # Final image
-FROM golang:1.20 as final
+FROM golang:1.22.6 as final
 
 WORKDIR /exchaind
 # Copy over binaries from the build-env
